@@ -26,14 +26,16 @@ pipeline {
         
         // Compile and run the unit tests for the app and its dependencies
         sh './gradlew testDebugUnitTest'
+        
+        sh 'find . -name "TEST-*.xml" -exec touch {} \\;'
 
         // Analyse the test results and update the build result as appropriate
         junit '**/TEST-*.xml'
         
-        sh 'cd ./app/build/test-results/testDebugUnitTest'
-        sh 'touch *.xml'
+        //sh 'cd ./app/build/test-results/testDebugUnitTest'
+        //sh 'touch *.xml'
         
-        sh 'cd ../../../../'
+        //sh 'cd ../../../../'
       }
     }
     stage('Build APK') {
