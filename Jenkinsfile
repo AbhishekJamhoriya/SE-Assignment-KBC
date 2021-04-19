@@ -11,6 +11,8 @@ pipeline {
     stage('Temp') {
       steps {
         sh 'ls -la ./gradlew'
+        sh 'chmod +x ./gradlew'
+        sh 'ls -la ./gradlew'
       }
     }
     stage('Compile') {
