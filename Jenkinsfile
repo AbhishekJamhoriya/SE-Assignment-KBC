@@ -24,10 +24,10 @@ pipeline {
     stage('Unit test') {
       steps {
         
-        cd './app/build/test-results/testDebugUnitTest'
-        touch '*.xml'
+        sh 'cd ./app/build/test-results/testDebugUnitTest'
+        sh 'touch *.xml'
         
-        cd '../../../../'
+        sh 'cd ../../../../'
         
         // Compile and run the unit tests for the app and its dependencies
         sh './gradlew testDebugUnitTest'
