@@ -24,16 +24,16 @@ pipeline {
     stage('Unit test') {
       steps {
         
-        sh 'cd ./app/build/test-results/testDebugUnitTest'
-        sh 'touch *.xml'
-        
-        sh 'cd ../../../../'
-        
         // Compile and run the unit tests for the app and its dependencies
         sh './gradlew testDebugUnitTest'
 
         // Analyse the test results and update the build result as appropriate
         junit '**/TEST-*.xml'
+        
+        sh 'cd ./app/build/test-results/testDebugUnitTest'
+        sh 'touch *.xml'
+        
+        sh 'cd ../../../../'
       }
     }
     stage('Build APK') {
