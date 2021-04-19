@@ -55,10 +55,10 @@ pipeline {
       }
     }
     stage('Deploy') {
-      when {
+      //when {
         // Only execute this stage when building from the `beta` branch
-        branch 'main'
-      }
+        //branch 'main'
+      //}
       steps {
         // Build the app in release mode, and sign the APK using the environment variables
         sh './gradlew assembleRelease'
