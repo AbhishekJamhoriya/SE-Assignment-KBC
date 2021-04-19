@@ -43,7 +43,7 @@ pipeline {
       steps {
         // Run Lint and analyse the results
         sh './gradlew lintDebug'
-        androidLint pattern: '**/lint-results-*.xml'
+        androidLintParser pattern: '**/lint-results-*.xml'
       }
     }
     stage('Deploy') {
