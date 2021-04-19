@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:background="@drawable/splashbg"
+    android:gravity="center"
+    android:padding="10dp"
+    >
+
+    <ImageView
+        android:id="@+id/questionlogo"
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        android:src="@drawable/kbc_logo"
+        android:layout_centerHorizontal="true"/>
+
+    <TextView
+        android:id="@+id/question"
+        android:layout_below="@+id/questionlogo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="What is the question?"
+        android:textColor="@color/white"
+        android:gravity="center_horizontal"
+        android:background="@drawable/text_background"
+        android:padding="5dp"
+        android:layout_margin="10dp"
+        />
+
+    <LinearLayout
+        android:id="@+id/optionsTop"
+        android:layout_below="@+id/question"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center_horizontal">
+        <TextView
+            android:id="@+id/option1"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:text="Option A"
+            android:textColor="@color/white"
+            android:gravity="center_horizontal"
+            android:background="@drawable/text_background"
+            android:padding="5dp"
+            android:layout_margin="10dp"
+            />
+        <TextView
+            android:id="@+id/option2"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:text="Option B"
+            android:textColor="@color/white"
+            android:gravity="center_horizontal"
+            android:background="@drawable/text_background"
+            android:padding="5dp"
+            android:layout_margin="10dp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/optionsBottom"
+        android:layout_below="@+id/optionsTop"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center_horizontal">
+        <TextView
+            android:id="@+id/option3"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:text="Option C"
+            android:textColor="@color/white"
+            android:gravity="center_horizontal"
+            android:background="@drawable/text_background"
+            android:padding="5dp"
+            android:layout_margin="10dp"
+            />
+        <TextView
+            android:id="@+id/option4"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:text="Option D"
+            android:textColor="@color/white"
+            android:gravity="center_horizontal"
+            android:background="@drawable/text_background"
+            android:padding="5dp"
+            android:layout_margin="10dp" />
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/nextQuestion"
+        android:layout_below="@+id/optionsBottom"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Save and Next"
+        android:layout_alignParentRight="true"
+        android:padding="5dp"
+        android:textAllCaps="false"
+        android:layout_margin="10dp"/>
+
+</RelativeLayout>

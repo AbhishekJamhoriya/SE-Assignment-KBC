@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".RulesActivity"
+    android:background="@drawable/splashbg"
+    android:padding="20dp"
+    android:gravity="center">
+
+    <ImageView
+        android:id="@+id/ruleslogo"
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        android:layout_centerHorizontal="true"
+        android:src="@drawable/kbc_logo"
+        android:layout_marginBottom="10dp"/>
+
+    <TextView
+        android:id="@+id/Rules"
+        android:layout_below="@+id/ruleslogo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Rules"
+        android:textColor="@color/white"
+        android:textStyle="bold"
+        android:textSize="22dp"/>
+
+    <TextView
+        android:layout_below="@+id/Rules"
+        android:id="@+id/Rule1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="1. There are a total of 10 questions."
+        android:textColor="@color/white"
+        android:textStyle="bold"
+        android:textSize="18dp"/>
+
+    <TextView
+        android:layout_below="@+id/Rule1"
+        android:id="@+id/Rule2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="2. Each question has four options."
+        android:textColor="@color/white"
+        android:textStyle="bold"
+        android:textSize="18dp"/>
+
+    <TextView
+        android:layout_below="@+id/Rule2"
+        android:id="@+id/Rule3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="3. Only one option is correct."
+        android:textColor="@color/white"
+        android:textStyle="bold"
+        android:textSize="18dp"/>
+
+    <TextView
+        android:layout_below="@+id/Rule3"
+        android:id="@+id/Rule4"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="4. Select answer and click on 'Submit and Next' to go to next question."
+        android:textColor="@color/white"
+        android:textStyle="bold"
+        android:textSize="18dp"/>
+
+    <TextView
+        android:layout_below="@+id/Rule4"
+        android:id="@+id/Rule5"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="5. You cannot go back to previous question."
+        android:textColor="@color/white"
+        android:textStyle="bold"
+        android:textSize="18dp"/>
+
+    <TextView
+        android:layout_below="@+id/Rule5"
+        android:id="@+id/Rule6"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="6. Each correct answer fetches you 10 points."
+        android:textColor="@color/white"
+        android:textStyle="bold"
+        android:textSize="18dp"/>
+
+    <TextView
+        android:layout_below="@+id/Rule6"
+        android:id="@+id/Rule7"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="7. There are 0 points for wrong answer."
+        android:textColor="@color/white"
+        android:textStyle="bold"
+        android:textSize="18dp"/>
+
+    <TextView
+        android:layout_below="@+id/Rule7"
+        android:id="@+id/Rule8"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="8. Your score and correct answers will be displayed at the end."
+        android:textColor="@color/white"
+        android:textStyle="bold"
+        android:textSize="18dp"/>
+
+    <Button
+        android:id="@+id/startgame"
+        android:layout_below="@id/Rule8"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Let's Play"
+        android:layout_alignParentRight="true"
+        android:padding="5dp"
+        android:textAllCaps="false"
+        android:layout_margin="10dp"/>
+
+</RelativeLayout>

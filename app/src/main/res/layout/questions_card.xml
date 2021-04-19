@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:elevation="20dp"
+    android:layout_margin="10dp"
+    android:background="@drawable/question_card_background">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:id="@+id/result_question"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="What is the question?"
+            android:textColor="@color/white"
+            android:gravity="center_horizontal"
+            android:background="@drawable/text_background"
+            android:padding="5dp"
+            android:layout_margin="10dp"
+            />
+
+        <LinearLayout
+            android:id="@+id/result_optionsTop"
+            android:layout_below="@+id/result_question"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_horizontal">
+            <TextView
+                android:id="@+id/result_option1"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:text="Option A"
+                android:textColor="@color/white"
+                android:gravity="center_horizontal"
+                android:background="@drawable/text_background"
+                android:padding="5dp"
+                android:layout_margin="10dp"
+                />
+            <TextView
+                android:id="@+id/result_option2"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:text="Option B"
+                android:textColor="@color/white"
+                android:gravity="center_horizontal"
+                android:background="@drawable/text_background"
+                android:padding="5dp"
+                android:layout_margin="10dp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/result_optionsBottom"
+            android:layout_below="@+id/result_optionsTop"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_horizontal">
+            <TextView
+                android:id="@+id/result_option3"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:text="Option C"
+                android:textColor="@color/white"
+                android:gravity="center_horizontal"
+                android:background="@drawable/text_background"
+                android:padding="5dp"
+                android:layout_margin="10dp"
+                />
+            <TextView
+                android:id="@+id/result_option4"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:text="Option D"
+                android:textColor="@color/white"
+                android:gravity="center_horizontal"
+                android:background="@drawable/text_background"
+                android:padding="5dp"
+                android:layout_margin="10dp" />
+        </LinearLayout>
+    </RelativeLayout>
+
+</androidx.cardview.widget.CardView>

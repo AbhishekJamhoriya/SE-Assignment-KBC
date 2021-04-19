@@ -1,0 +1,104 @@
+{
+  "questions": [
+    {
+      "question": "When was the Declaration of Independence approved by the Second Continental Congress?",
+      "correct_answer": "July 4, 1776",
+      "options": [
+        {"A": "May 4, 1776"},
+        {"B": "July 4, 1776"},
+        {"C": "June 4, 1776"},
+        {"D": "July 2, 1776"}
+      ]
+    },
+    {
+      "question": "What name represents the letter 'M' in the NATO phonetic alphabet?",
+      "correct_answer": "Mike",
+      "options": [
+        {"A": "Matthew"},
+        {"B": "Mark"},
+        {"C": "Mike"},
+        {"D": "Max"}
+      ]
+    },
+    {
+      "question": "Which of these is the name of a Japanese system of alternative medicine, literally meaning 'finger pressure'?",
+      "correct_answer": "Shiatsu",
+      "options": [
+        {"A": "Ukiyo"},
+        {"B": "Shiatsu"},
+        {"C": "Majime"},
+        {"D": "Ikigai"}
+      ]
+    },
+    {
+      "question": "On average, Americans consume 100 pounds of what per second?",
+      "correct_answer": "Chocolate",
+      "options": [
+        {"A": "Chocolate"},
+        {"B": "Potatoes"},
+        {"C": "Donuts"},
+        {"D": "Cocaine"}
+      ]
+    },
+    {
+      "question": "According to the United States' CDC, one in how many Americans die annually due to smoking?",
+      "correct_answer": "Five",
+      "options": [
+        {"A": "Twenty"},
+        {"B": "Ten"},
+        {"C": "One hundred"},
+        {"D": "Five"}
+      ]
+    },
+    {
+      "question": "When did the website 'Facebook' launch?",
+      "correct_answer": "2004",
+      "options": [
+        {"A": "2005"},
+        {"B": "2003"},
+        {"C": "2004"},
+        {"D": "2006"}
+      ]
+    },
+    {
+      "question": "What is real haggis made of?",
+      "correct_answer": "Sheep's Heart, Liver and Lungs",
+      "options": [
+        {"A": "Sheep's Heart, Kidneys and Lungs"},
+        {"B": "Sheep's Liver, Kidneys and Eyes"},
+        {"C": "Sheep's Heart, Liver and Lungs"},
+        {"D": "Whole Sheep"}
+      ]
+    },
+    {
+      "question": "The website 'Shut Up & Sit Down' reviews which form of media?",
+      "correct_answer": "Board Games",
+      "options": [
+        {"A": "Board Games"},
+        {"B": "Television Shows"},
+        {"C": "Video Games"},
+        {"D": "Films"}
+      ]
+    },
+    {
+      "question": "Which item of clothing is usually worn by a Scotsman at a wedding?",
+      "correct_answer": "Kilt",
+      "options": [
+        {"A": "Skirt"},
+        {"B": "Dress"},
+        {"C": "Rhobes"},
+        {"D": "Kilt"}
+      ]
+    },
+    {
+      "question": "Which company's original slogan was 'Don't be evil'?",
+      "correct_answer": "Google",
+      "options": [
+        {"A": "Apple"},
+        {"B": "Google"},
+        {"C": "Yahoo"},
+        {"D": "Microsoft"}
+      ]
+    }
+  ]
+}
