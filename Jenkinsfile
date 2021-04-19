@@ -51,7 +51,7 @@ pipeline {
       steps {
         // Run Lint and analyse the results
         sh './gradlew lintDebug'
-        androidLintParser pattern: '**/lint-results-*.xml'
+        //androidLintParser pattern: '**/lint-results-*.xml'
       }
     }
     stage('Deploy') {
@@ -65,9 +65,7 @@ pipeline {
 
         // Archive the APKs so that they can be downloaded from Jenkins
         archiveArtifacts '**/*.apk'
-
-        // Upload the APK to Google Play
-        androidApkUpload googleCredentialsId: 'Google Play', apkFilesPattern: '**/*-release.apk', trackName: 'beta'
+        
       }
       post {
         success {
