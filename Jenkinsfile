@@ -24,7 +24,7 @@ pipeline {
     stage('Unit test') {
       steps {
         
-        mvn clean test 
+        sh 'mvn clean test' 
         
         // Compile and run the unit tests for the app and its dependencies
         sh './gradlew testDebugUnitTest'
