@@ -8,15 +8,15 @@ pipeline {
     skipStagesAfterUnstable()
   }
   stages {
+    stage('Temp') {
+      steps {
+        sh 'ls -la ./gradlew'
+      }
+    }
     stage('Compile') {
       steps {
         // Compile the app and its dependencies
         sh './gradlew compileDebugSources'
-      }
-    }mp
-    stage('Temp') {
-      steps {
-        sh 'ls -la ./gradlew'
       }
     }
     stage('Unit test') {
