@@ -8,7 +8,8 @@ pipeline {
     skipStagesAfterUnstable()
   }
   stages {
-    stage('Temp') {
+    stage('Permissions') {
+      // This stage is set to access some permissions in Ubuntu machine
       steps {
         sh 'ls -la ./gradlew'
         sh 'chmod +x ./gradlew'
@@ -31,11 +32,7 @@ pipeline {
 
         // Analyse the test results and update the build result as appropriate
         junit '**/TEST-*.xml'
-        
-        //sh 'cd ./app/build/test-results/testDebugUnitTest'
-        //sh 'touch *.xml'
-        
-        //sh 'cd ../../../../'
+
       }
     }
     stage('Build APK') {
@@ -51,14 +48,11 @@ pipeline {
       steps {
         // Run Lint and analyse the results
         sh './gradlew lintDebug'
-        //androidLintParser pattern: '**/lint-results-*.xml'
+        
       }
     }
     stage('Deploy') {
-      //when {
-        // Only execute this stage when building from the `beta` branch
-        //branch 'main'
-      //}
+      
       steps {
         // Build the app in release mode, and sign the APK using the environment variables
         sh './gradlew assembleRelease'
@@ -69,16 +63,16 @@ pipeline {
       }
       post {
         success {
-          // Notify if the upload succeeded
-          mail to: 'raghav.1@iitj.ac.in', subject: 'New build available!', body: 'Check it out!'
+          // Notify build succeeded
+          sh "echo 'Congrqatulations! Build successful.'"
         }
       }
     }
   }
   post {
     failure {
-      // Notify developer team of the failure
-      mail to: 'raghav.1@iitj.ac.in', subject: 'Oops!', body: "Build ${env.BUILD_NUMBER} failed; ${env.BUILD_URL}"
+      // Notify build failed
+      sh "echo 'Oops! Build ${env.BUILD_NUMBER} failed; ${env.BUILD_URL}'"
     }
   }
 }
